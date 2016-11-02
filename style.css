@@ -5,44 +5,16 @@ body {
 }
 .container {
   min-width: 600px;
-  border: 1px solid black;
-  display: table-row;;
+	margin: 5px;
+	padding: 5px;
+  border: 5px solid black;
 }
 .color {
+	border: 2px solid black;
   height: 120px;
-  width: 120px;
+
   display: table-cell;
+	width: 120px;
   align-self: flex;
 }
 /*flex items*/
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-.red {
-  background-color: red;
-}
-
-
-.orange {
-  background-color: orange;
-}
-
-.button-list {
-  display: flex;
-}
-
-button {
-  padding: 14px 20px;
-  font-size: 2em;
-}
-
-@media screen and (max-width: 1200) {
-    .button-list {
-        display: flex;
-        flex-direction: column;
-    }
-}
