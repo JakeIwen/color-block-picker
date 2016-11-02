@@ -1,0 +1,48 @@
+body {
+	min-width: 495px;
+}
+.row {
+}
+.container {
+  min-width: 600px;
+  border: 1px solid black;
+  display: table-row;;
+}
+.color {
+  height: 120px;
+  width: 120px;
+  display: table-cell;
+  align-self: flex;
+}
+/*flex items*/
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+
+
+.orange {
+  background-color: orange;
+}
+
+.button-list {
+  display: flex;
+}
+
+button {
+  padding: 14px 20px;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 1200) {
+    .button-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
