@@ -1,7 +1,8 @@
 body {
 	min-width: 495px;
-	background-color: #222222;
-color: white;
+
+	color: white;
+	text-align: center;
 }
 .row {
 }
@@ -11,9 +12,7 @@ color: white;
 	padding: 5px;
   border: 5px solid black;
 }
-p {
-	text-align: center;
-}
+
 .color {
 	border: 2px solid black;
   height: 120px;
@@ -21,4 +20,28 @@ p {
 	width: 120px;
   align-self: flex;
 }
-/*flex items*/
+
+body {
+	background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 6s ease infinite;
+	-moz-animation: Gradient 6s ease infinite;
+	animation: Gradient 6s ease infinite;
+}
+
+
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}

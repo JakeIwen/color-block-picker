@@ -3,11 +3,10 @@ $(document).ready(function() {
   var correctColor = ''
   appendDom();
 
-
-
   $('.container').on('click', '.color', function(event) {
     event.preventDefault();
-    $('.msg').remove(); //delete any printed messages
+    $('.msg').remove();
+    //delete any printed messages
     // get color from class name
     var thisClass = $(this).attr('class').split(' ')[1];
     //check if right color was clicked and print appropriate mes
@@ -35,17 +34,17 @@ $(document).ready(function() {
   function appendDom() {
    $('.color').remove();
    $('span').remove();
-
+   $('br').remove();
     var numColors = 10;
     var colorArray = randomColors(allColorNames, numColors);
     correctColor = colorArray[randomNumber(0, numColors - 1)];
-    $('h2').append('<span class="msg">' + correctColor + '</span>');
+    $('h2').append('<span>' + correctColor + '</span><br>');
     // console.log(correctColor);
     //add new row to table with new employee data
     //provide unique row class for each table row
-    var $el = $('.container');
     for(var i = 0; i < numColors; i++) {
-      $el.append('<div style="background-color:' + colorArray[i] + '" class="color '+ colorArray[i] +'"></div>');
+      $('.container').append('<div style="background-color:'
+      + colorArray[i] + '" class="color '+ colorArray[i] +'"></div>');
     }
   }
 
